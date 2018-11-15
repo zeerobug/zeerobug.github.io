@@ -1,0 +1,880 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/pdfmake-0.1.27/dt-1.10.15/b-1.4.0/b-html5-1.4.0/b-print-1.4.0/r-2.1.1/datatables.min.css"/>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">World's Institutions Ranking</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <!-- <form class="navbar-form navbar-right" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </form> -->
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h2>2017 Results</h2>
+        <p></p>
+        
+      </div>
+    </div>
+    <div class="container">
+<table id="ranking"   class="table table-striped table-bordered"   cellspacing="0" width="100%">
+ <thead>
+     <tr>
+      <th>Rank 2017</th>
+      <th>Institution</th>
+      <th>Total Votes</th>
+     </tr>
+ </thead>
+ <tbody>
+ <tr>
+  <td>1</td>
+  <td>California Institute of Technology</td>
+  <td align=right>681</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>Harvard Univ.</td>
+  <td align=right>643</td>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>Columbia Univ.</td>
+  <td align=right>615</td>
+ </tr>
+ <tr>
+  <td>4</td>
+  <td>Mass. Institute of Technology</td>
+  <td align=right>575</td>
+ </tr>
+ <tr>
+  <td>5</td>
+  <td>Univ. of Cambridge</td>
+  <td align=right>559</td>
+ </tr>
+ <tr>
+  <td>6</td>
+  <td>Boston Univ.</td>
+  <td align=right>553</td>
+ </tr>
+ <tr>
+  <td>7</td>
+  <td>Stanford Univ.</td>
+  <td align=right>552</td>
+ </tr>
+ <tr>
+  <td>8</td>
+  <td>TU München</td>
+  <td align=right>545</td>
+ </tr>
+ <tr>
+  <td>9</td>
+  <td>Univ. of Tokyo</td>
+  <td align=right>545</td>
+ </tr>
+ <tr>
+  <td>10</td>
+  <td>Yale Univ.</td>
+  <td align=right>536</td>
+ </tr>
+ <tr>
+  <td>11</td>
+  <td>Princeton Univ.</td>
+  <td align=right>527</td>
+ </tr>
+ <tr>
+  <td>12</td>
+  <td>Hong Kong Univ. of Sciences and Tech.</td>
+  <td align=right>524</td>
+ </tr>
+ <tr>
+  <td>13</td>
+  <td>Univ. of Toronto</td>
+  <td align=right>521</td>
+ </tr>
+ <tr>
+  <td>14</td>
+  <td>Peking Univ.</td>
+  <td align=right>520</td>
+ </tr>
+ <tr>
+  <td>15</td>
+  <td>Univ. of Oxford</td>
+  <td align=right>518</td>
+ </tr>
+ <tr>
+  <td>16</td>
+  <td>National Univ. of Singapore</td>
+  <td align=right>513</td>
+ </tr>
+ <tr>
+  <td>17</td>
+  <td>Imperial College London</td>
+  <td align=right>504</td>
+ </tr>
+ <tr>
+  <td>18</td>
+  <td>McGill Univ.</td>
+  <td align=right>499</td>
+ </tr>
+ <tr>
+  <td>19</td>
+  <td>Tokyo Institute of Technology</td>
+  <td align=right>495</td>
+ </tr>
+ <tr>
+  <td>20</td>
+  <td>Univ. of California, Berkeley</td>
+  <td align=right>489</td>
+ </tr>
+ <tr>
+  <td>21</td>
+  <td>Australian National Univ.</td>
+  <td align=right>486</td>
+ </tr>
+ <tr>
+  <td>22</td>
+  <td>IE Univ</td>
+  <td align=right>482</td>
+ </tr>
+ <tr>
+  <td>23</td>
+  <td>H.E.C. Paris</td>
+  <td align=right>482</td>
+ </tr>
+ <tr>
+  <td>24</td>
+  <td>École Polytechnique ParisTech</td>
+  <td align=right>481</td>
+ </tr>
+ <tr>
+  <td>25</td>
+  <td>King's College London</td>
+  <td align=right>479</td>
+ </tr>
+ <tr>
+  <td>26</td>
+  <td>Swiss Federal Inst. of Tech. Zurich</td>
+  <td align=right>474</td>
+ </tr>
+ <tr>
+  <td>27</td>
+  <td>EM Lyon</td>
+  <td align=right>473</td>
+ </tr>
+ <tr>
+  <td>28</td>
+  <td>Johns Hopkins Univ.</td>
+  <td align=right>470</td>
+ </tr>
+ <tr>
+  <td>29</td>
+  <td>Indian Institute of Science</td>
+  <td align=right>466</td>
+ </tr>
+ <tr>
+  <td>30</td>
+  <td>Shanghai Jiao Tong Univ.</td>
+  <td align=right>465</td>
+ </tr>
+ <tr>
+  <td>31</td>
+  <td>Ludwig,Maximilians,Univ. München</td>
+  <td align=right>463</td>
+ </tr>
+ <tr>
+  <td>32</td>
+  <td>École Normale Supérieure Paris</td>
+  <td align=right>460</td>
+ </tr>
+ <tr>
+  <td>33</td>
+  <td>Dartmouth College</td>
+  <td align=right>457</td>
+ </tr>
+ <tr>
+  <td>34</td>
+  <td class=xl75>Univ. of Manchester</td>
+  <td align=right>451</td>
+ </tr>
+ <tr>
+  <td>35</td>
+  <td>Ecole Polytechnique Federale de Lausanne</td>
+  <td align=right>449</td>
+ </tr>
+ <tr>
+  <td>36</td>
+  <td>École des Mines ParisTech</td>
+  <td align=right>447</td>
+ </tr>
+ <tr>
+  <td>37</td>
+  <td>Duke Univ.</td>
+  <td align=right>446</td>
+ </tr>
+ <tr>
+  <td>38</td>
+  <td>Fudan Univ.</td>
+  <td align=right>445</td>
+ </tr>
+ <tr>
+  <td>39</td>
+  <td>Brigham Young Univ.</td>
+  <td align=right>440</td>
+ </tr>
+ <tr>
+  <td>40</td>
+  <td>Univ. of California, Los Angeles</td>
+  <td align=right>439</td>
+ </tr>
+ <tr>
+  <td>41</td>
+  <td>École Centrale Supélec</td>
+  <td align=right>430</td>
+ </tr>
+ <tr>
+  <td>42</td>
+  <td>Brown Univ.</td>
+  <td align=right>428</td>
+ </tr>
+ <tr>
+  <td>43</td>
+  <td>New York Univ.</td>
+  <td align=right>426</td>
+ </tr>
+ <tr>
+  <td>44</td>
+  <td>Univ. of Montreal/HEC</td>
+  <td align=right>419</td>
+ </tr>
+ <tr>
+  <td>45</td>
+  <td>Univ. of British Columbia</td>
+  <td align=right>408</td>
+ </tr>
+ <tr>
+  <td>46</td>
+  <td>London School of Economics</td>
+  <td align=right>406</td>
+ </tr>
+ <tr>
+  <td>47</td>
+  <td>Goethe,Univ. Frankfurt am Main</td>
+  <td align=right>404</td>
+ </tr>
+ <tr>
+  <td>48</td>
+  <td>Univ. of Sydney</td>
+  <td align=right>403</td>
+ </tr>
+ <tr>
+  <td>49</td>
+  <td>Univ. College London</td>
+  <td align=right>400</td>
+ </tr>
+ <tr>
+  <td>50</td>
+  <td>Univ. of Melbourne</td>
+  <td align=right>396</td>
+ </tr>
+ <tr>
+  <td>51</td>
+  <td>Cornell Univ.</td>
+  <td align=right>384</td>
+ </tr>
+ <tr>
+  <td>52</td>
+  <td>Univ. of Chicago</td>
+  <td align=right>381</td>
+ </tr>
+ <tr>
+  <td>53</td>
+  <td>Carnegie Mellon Univ.</td>
+  <td align=right>378</td>
+ </tr>
+ <tr>
+  <td>54</td>
+  <td>Univ. Heidelberg</td>
+  <td align=right>374</td>
+ </tr>
+ <tr>
+  <td>55</td>
+  <td>Tsinghua Univ.</td>
+  <td align=right>371</td>
+ </tr>
+ <tr>
+  <td>56</td>
+  <td>Univ. of California, San Francisco</td>
+  <td align=right>369</td>
+ </tr>
+ <tr>
+  <td>57</td>
+  <td>Monash Univ.</td>
+  <td align=right>367</td>
+ </tr>
+ <tr>
+  <td>58</td>
+  <td>Humboldt,Univ. zu Berlin</td>
+  <td align=right>366</td>
+ </tr>
+ <tr>
+  <td>59</td>
+  <td>Stockholm Univ.</td>
+  <td align=right>365</td>
+ </tr>
+ <tr>
+  <td>60</td>
+  <td>Katholieke Univ. Leuven</td>
+  <td align=right>363</td>
+ </tr>
+ <tr>
+  <td>61</td>
+  <td>Univ. of New South Wales</td>
+  <td align=right>351</td>
+ </tr>
+ <tr>
+  <td>62</td>
+  <td>The Hebrew Univ. of Jerusalem</td>
+  <td align=right>350</td>
+ </tr>
+ <tr>
+  <td>63</td>
+  <td>Kyoto Univ.</td>
+  <td align=right>348</td>
+ </tr>
+ <tr>
+  <td>64</td>
+  <td>Frankfurt School of Finance and Managem<span style='display:none'>ent</span></td>
+  <td align=right>346</td>
+ </tr>
+ <tr>
+  <td>65</td>
+  <td>Univ of Science and Technlogy</td>
+  <td align=right>345</td>
+ </tr>
+ <tr>
+  <td>66</td>
+  <td>Univ. de Navarra</td>
+  <td align=right>339</td>
+ </tr>
+ <tr>
+  <td>67</td>
+  <td>Univ. of Copenhagen</td>
+  <td align=right>336</td>
+ </tr>
+ <tr>
+  <td>68</td>
+  <td>Univ. Zürich</td>
+  <td align=right>333</td>
+ </tr>
+ <tr>
+  <td>69</td>
+  <td>Technische Univ. Delft</td>
+  <td align=right>332</td>
+ </tr>
+ <tr>
+  <td>70</td>
+  <td>ESSEC</td>
+  <td align=right>327</td>
+ </tr>
+ <tr>
+  <td>71</td>
+  <td>Univ. of Hong Kong</td>
+  <td align=right>323</td>
+ </tr>
+ <tr>
+  <td>72</td>
+  <td>Univ. Commerciale Luigi Bocconi</td>
+  <td align=right>321</td>
+ </tr>
+ <tr>
+  <td>73</td>
+  <td>Tech. Univ. of Denmark</td>
+  <td align=right>316</td>
+ </tr>
+ <tr>
+  <td>74</td>
+  <td>McMaster Univ.</td>
+  <td align=right>316</td>
+ </tr>
+ <tr>
+  <td>75</td>
+  <td>Univ. de Sao Paulo</td>
+  <td align=right>309</td>
+ </tr>
+ <tr>
+  <td>76</td>
+  <td>Lunds Univ.</td>
+  <td align=right>300</td>
+ </tr>
+ <tr>
+  <td>77</td>
+  <td>Korea Adv. Inst. of Sciences and Tech.</td>
+  <td align=right>298</td>
+ </tr>
+ <tr>
+  <td>78</td>
+  <td>Univ. of Edinburgh</td>
+  <td align=right>296</td>
+ </tr>
+ <tr>
+  <td>79</td>
+  <td>Univ. of California, San Diego</td>
+  <td align=right>294</td>
+ </tr>
+ <tr>
+  <td>80</td>
+  <td>Karlsruhe Institute of Technology (KIT)</td>
+  <td align=right>293</td>
+ </tr>
+ <tr>
+  <td>81</td>
+  <td>Michigan State Univ.</td>
+  <td align=right>292</td>
+ </tr>
+ <tr>
+  <td>82</td>
+  <td>The Chinese Univ. of Hong Kong</td>
+  <td align=right>291</td>
+ </tr>
+ <tr>
+  <td>83</td>
+  <td>Univ. of Helsinki</td>
+  <td align=right>290</td>
+ </tr>
+ <tr>
+  <td>84</td>
+  <td>Technische Univ. Eindhoven</td>
+  <td align=right>288</td>
+ </tr>
+ <tr>
+  <td>85</td>
+  <td>Univ. of Bristol</td>
+  <td align=right>284</td>
+ </tr>
+ <tr>
+  <td>86</td>
+  <td>Univ. of Southern California</td>
+  <td align=right>282</td>
+ </tr>
+ <tr>
+  <td>87</td>
+  <td>Georg,August,Univ. Gottingen</td>
+  <td align=right>279</td>
+ </tr>
+ <tr>
+  <td>88</td>
+  <td>KTH Royal Institute of Technology</td>
+  <td align=right>279</td>
+ </tr>
+ <tr>
+  <td>89</td>
+  <td>Technische Univ. Berlin</td>
+  <td align=right>274</td>
+ </tr>
+ <tr>
+  <td>90</td>
+  <td>Sciences Po Paris</td>
+  <td align=right>273</td>
+ </tr>
+ <tr>
+  <td>91</td>
+  <td>Nanyang Technological Univ.</td>
+  <td align=right>267</td>
+ </tr>
+ <tr>
+  <td>92</td>
+  <td>Univ. Ramón Llull</td>
+  <td align=right>266</td>
+ </tr>
+ <tr>
+  <td>93</td>
+  <td>Univ. of Pennsylvania</td>
+  <td align=right>263</td>
+ </tr>
+ <tr>
+  <td>94</td>
+  <td>Univ. de Lausanne</td>
+  <td align=right>263</td>
+ </tr>
+ <tr>
+  <td>95</td>
+  <td>Georgetown Univ.</td>
+  <td align=right>260</td>
+ </tr>
+ <tr>
+  <td>96</td>
+  <td>Erasmus Univ. Rotterdam</td>
+  <td align=right>258</td>
+ </tr>
+ <tr>
+  <td>97</td>
+  <td>Rice Univ.</td>
+  <td align=right>254</td>
+ </tr>
+ <tr>
+  <td>98</td>
+  <td>EDHEC</td>
+  <td align=right>254</td>
+ </tr>
+ <tr>
+  <td>99</td>
+  <td>Univ. of Washington</td>
+  <td align=right>254</td>
+ </tr>
+ <tr>
+  <td>100</td>
+  <td>Univ. Bern</td>
+  <td align=right>250</td>
+ </tr>
+ <tr>
+  <td>101</td>
+  <td>Tecnol—gico de Monterrey</td>
+  <td align=right>239</td>
+ </tr>
+ <tr>
+  <td>102</td>
+  <td>Politecnico di Milano</td>
+  <td align=right>233</td>
+ </tr>
+ <tr>
+  <td>103</td>
+  <td>Seoul National Univ.</td>
+  <td align=right>229</td>
+ </tr>
+ <tr>
+  <td>104</td>
+  <td>Univ. Pierre et Marie Curie</td>
+  <td align=right>228</td>
+ </tr>
+ <tr>
+  <td>105</td>
+  <td>Leiden Univ.</td>
+  <td align=right>225</td>
+ </tr>
+ <tr>
+  <td>106</td>
+  <td>Northwestern Univ.</td>
+  <td align=right>224</td>
+ </tr>
+ <tr>
+  <td>107</td>
+  <td>Ohio State Univ.</td>
+  <td align=right>224</td>
+ </tr>
+ <tr>
+  <td>108</td>
+  <td>Zhejiang Univ.</td>
+  <td align=right>223</td>
+ </tr>
+ <tr>
+  <td>109</td>
+  <td>Rijksuniversiteit Groningen</td>
+  <td align=right>221</td>
+ </tr>
+ <tr>
+  <td>110</td>
+  <td>Texas A&amp;M Univ.</td>
+  <td align=right>216</td>
+ </tr>
+ <tr>
+  <td>111</td>
+  <td>Karolinska Institutet</td>
+  <td align=right>213</td>
+ </tr>
+ <tr>
+  <td>112</td>
+  <td>Univ. Gent</td>
+  <td align=right>212</td>
+ </tr>
+ <tr>
+  <td>113</td>
+  <td>Technion Israel Institute of Technology</td>
+  <td align=right>208</td>
+ </tr>
+ <tr>
+  <td>114</td>
+  <td>Purdue Univ.</td>
+  <td align=right>200</td>
+ </tr>
+ <tr>
+  <td>115</td>
+  <td>Univ. of Texas, Austin</td>
+  <td align=right>197</td>
+ </tr>
+ <tr>
+  <td>116</td>
+  <td>Osaka Univ.</td>
+  <td align=right>195</td>
+ </tr>
+ <tr>
+  <td>117</td>
+  <td>Georgia Tech.</td>
+  <td align=right>193</td>
+ </tr>
+ <tr>
+  <td>118</td>
+  <td>Nanjing Univ.</td>
+  <td align=right>191</td>
+ </tr>
+ <tr>
+  <td>119</td>
+  <td>Pohang Institute of Science and Technolog<span style='display:none'>y</span></td>
+  <td align=right>191</td>
+ </tr>
+ <tr>
+  <td>120</td>
+  <td>Freie Univ. Berlin</td>
+  <td align=right>189</td>
+ </tr>
+ <tr>
+  <td>121</td>
+  <td>Univ. of Oslo</td>
+  <td align=right>186</td>
+ </tr>
+ <tr>
+  <td>122</td>
+  <td>National Taiwan Univ.</td>
+  <td align=right>181</td>
+ </tr>
+ <tr>
+  <td>123</td>
+  <td>Univ. of Science and Technology of China</td>
+  <td align=right>176</td>
+ </tr>
+ <tr>
+  <td>124</td>
+  <td>Univ. of Alberta</td>
+  <td align=right>170</td>
+ </tr>
+ <tr>
+  <td>125</td>
+  <td>Univ. Basel</td>
+  <td align=right>166</td>
+ </tr>
+ <tr>
+  <td>126</td>
+  <td>Lomonosov Moscow State Univ.</td>
+  <td align=right>162</td>
+ </tr>
+ <tr>
+  <td>127</td>
+  <td>Keio Univ.</td>
+  <td align=right>156</td>
+ </tr>
+ <tr>
+  <td>128</td>
+  <td>Univ. of Michigan, Ann Arbor</td>
+  <td align=right>152</td>
+ </tr>
+ <tr>
+  <td>129</td>
+  <td>Univ. Paris,Sud</td>
+  <td align=right>143</td>
+ </tr>
+ <tr>
+  <td>130</td>
+  <td>Univ. de Genve</td>
+  <td align=right>141</td>
+ </tr>
+ <tr>
+  <td>131</td>
+  <td>Trinity College Dublin</td>
+  <td align=right>140</td>
+ </tr>
+ <tr>
+  <td>132</td>
+  <td>Rutgers Univ.</td>
+  <td align=right>138</td>
+ </tr>
+ <tr>
+  <td>133</td>
+  <td>RWTH Aachen Univ.</td>
+  <td align=right>133</td>
+ </tr>
+ <tr>
+  <td>134</td>
+  <td>The City Univ. of Hong Kong</td>
+  <td align=right>131</td>
+ </tr>
+ <tr>
+  <td>135</td>
+  <td>Tel Aviv Univ.</td>
+  <td align=right>127</td>
+ </tr>
+ <tr>
+  <td>136</td>
+  <td>National Tsing Hua Univ.</td>
+  <td align=right>123</td>
+ </tr>
+ <tr>
+  <td>137</td>
+  <td>Univ. Wien</td>
+  <td align=right>115</td>
+ </tr>
+ <tr>
+  <td>138</td>
+  <td class=xl67>American Univ. of Dubai</td>
+  <td align=right>109</td>
+ </tr>
+ <tr>
+  <td>139</td>
+  <td>Korea Univ.</td>
+  <td align=right>102</td>
+ </tr>
+ <tr>
+  <td>140</td>
+  <td>King Abdulaziz Univ.</td>
+  <td align=right>100</td>
+ </tr>
+ <tr>
+  <td>141</td>
+  <td>Univ. Nacional Aut—noma de México</td>
+  <td align=right>96</td>
+ </tr>
+ <tr>
+  <td>142</td>
+  <td>Univ. of Birmingham</td>
+  <td align=right>91</td>
+ </tr>
+ <tr>
+  <td>143</td>
+  <td>King Saud Univ.</td>
+  <td align=right>85</td>
+ </tr>
+ <tr>
+  <td>144</td>
+  <td>National Chiao Tung Univ.</td>
+  <td align=right>81</td>
+ </tr>
+ <tr>
+  <td>145</td>
+  <td>Indian Institute of Science Bangalore</td>
+  <td align=right>78</td>
+ </tr>
+ <tr>
+  <td>146</td>
+  <td>Univ. of Auckland</td>
+  <td align=right>75</td>
+ </tr>
+ <tr>
+  <td>147</td>
+  <td>Univ. of Malaisia (UM)</td>
+  <td align=right>70</td>
+ </tr>
+ <tr>
+  <td>148</td>
+  <td>Indian Institute of Technology Bombay</td>
+  <td align=right>59</td>
+ </tr>
+ <tr>
+  <td>149</td>
+  <td>ESCP Europe</td>
+  <td align=right>57</td>
+ </tr>
+ <tr>
+  <td>150</td>
+  <td>Univ Witswaterstrand</td>
+  <td align=right>34</td>
+ </tr>
+ </tbody>
+</table>
+    <hr>
+    <footer>
+        <p>&copy; Iteas 2017</p>
+    </footer>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.4.0/b-html5-1.4.0/b-print-1.4.0/r-2.1.1/datatables.min.js"></script>
+
+    <!-- Initialize the plugin: -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#ranking').DataTable({
+            "pageLength": 50,
+            dom: 'lfrBtip',
+            buttons: [
+                'pdf',
+                'excel',
+                'csv',
+                'copy',
+                'print'
+            ]
+        });
+    });
+    </script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

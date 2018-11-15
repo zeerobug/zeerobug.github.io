@@ -1,0 +1,1407 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">World's Institutions Ranking</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <!-- <form class="navbar-form navbar-right" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </form> -->
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron">
+      <div class="container">
+        <h2>Your ranking</h2>
+        <p>You will find below the ranking for the 150 universities the most employable in 2016 as well as a database of more than 1000 institutions of the world.</p>
+        <p>Please select from either of these lists a meximum of 10 institutions which you consider produced the most employable graduates.</p>
+      </div>
+    </div>
+    <div class="container">
+        <form method="POST" action="server/store.php">
+            <!-- Start question -->
+            <fieldset>
+              <legend>Survey (pt.2)</legend>
+
+             
+            </fieldset>
+            <!-- End question -->
+            <!-- Start question -->
+            <div class="form-group">
+            
+                <label>150 most employable universities in 2016:</label>
+            
+            <p>
+              <select id="univ-chooser1" multiple="multiple" name="rank_most[]">
+<option>California Institute of Technology</option>
+<option>Mass. Institute of Technology</option>
+<option>Harvard Univ.</option>
+<option>Univ. of Cambridge</option>
+<option>Stanford Univ.</option>
+<option>Yale Univ.</option>
+<option>Univ. of Oxford</option>
+<option>TU München</option>
+<option>Princeton Univ.</option>
+<option>Univ. of Tokyo</option>
+<option>Boston Univ.</option>
+<option>Columbia Univ.</option>
+<option>Hong Kong Univ. of Sciences and Tech.</option>
+<option>Univ. of Toronto</option>
+<option>National Univ. of Singapore</option>
+<option>Imperial College London</option>
+<option>Peking Univ.</option>
+<option>McGill Univ.</option>
+<option>Univ. of California-Berkeley</option>
+<option>Tokyo Institute of Technology</option>
+<option>H.E.C. Paris</option>
+<option>Australian National Univ.</option>
+<option>King's College London</option>
+<option>Univ. of Manchester</option>
+<option>IE Univ</option>
+<option>EM Lyon</option>
+<option>Swiss Federal Inst. of Tech. Zurich</option>
+<option>Duke Univ.</option>
+<option>Johns Hopkins Univ.</option>
+<option>Brigham Young Univ.</option>
+<option>Ludwig-Maximilians-Univ. München</option>
+<option>Univ. of Edinburgh</option>
+<option>École Normale Supérieure Paris</option>
+<option>Dartmouth College</option>
+<option>Ecole Polytechnique Federale de Lausanne</option>
+<option>École des Mines ParisTech</option>
+<option>Fudan Univ.</option>
+<option>Indian Institute of Science</option>
+<option>New York Univ.</option>
+<option>Brown Univ.</option>
+<option>Univ. of California-Los Angeles</option>
+<option>École Centrale Supélec </option>
+<option>École Polytechnique ParisTech</option>
+<option>Univ. of Montreal/HEC</option>
+<option>London School of Economics</option>
+<option>Univ. of British Columbia</option>
+<option>Univ. Of Melbourne</option>
+<option>Univ.College London</option>
+<option>University of Sydney</option>
+<option>Goethe-Univ. Frankfurt am Main</option>
+<option>Univ. of Copenhagen</option>
+<option>Carnegie Mellon Univ.</option>
+<option>Shanghai Jiao Tong Univ.</option>
+<option>Cornell Univ.</option>
+<option>Univ. of Chicago</option>
+<option>Univ. Heidelberg</option>
+<option>Monash Univ.</option>
+<option>Univ. Gent</option>
+<option>Tsinghua Univ.</option>
+<option>Univ. of California-San Francisco</option>
+<option>Univ. of New South Wales</option>
+<option>Humboldt-Universität zu Berlin</option>
+<option>Stockholm Univ.</option>
+<option>Katholieke Univ. Leuven</option>
+<option>Kyoto Univ.</option>
+<option>Univ.de Navarra</option>
+<option>The Hebrew Univ. of Jerusalem</option>
+<option>Frankfurt School of Finance and Management</option>
+<option>Univ. Zürich</option>
+<option>Univ. of Helsinki</option>
+<option>Univ. de São Paulo</option>
+<option>Technische Univ. Delft</option>
+<option>Univ of Science and Technlogy</option>
+<option>ESSEC</option>
+<option>McMaster Univ.</option>
+<option>Tech. Univ. Of Denmark</option>
+<option>Univ. Of Hong Kong</option>
+<option>Univ. Commerciale Luigi Bocconi</option>
+<option>Lunds Univ.</option>
+<option>Univ. of California- San Diego</option>
+<option>Karlsruhe Institute of Technology (KIT)</option>
+<option>KAIST Korea Adv. Inst. of Sciences and Tech.</option>
+<option>Michigan State Univ.</option>
+<option>Univ. of Bristol</option>
+<option>The Chinese Univ. of Hong Kong</option>
+<option>Univ. Ramón Llull</option>
+<option>Univ. Pierre et Marie Curie</option>
+<option>Technische Univ. Eindhoven</option>
+<option>Univ. of Southern California</option>
+<option>Univ. of Birmingham</option>
+<option>KTH Royal Institute of Technology</option>
+<option>Georg-August-Universität Gottingen</option>
+<option>Univ. of Nottingham</option>
+<option>Georgetown Univ.</option>
+<option>Erasmus Univ. Rotterdam</option>
+<option>Technische Universität Berlin</option>
+<option>Sciences Po Paris</option>
+<option>University of Pennsylvania</option>
+<option>Univ. de Lausanne</option>
+<option>Northwestern Univ.</option>
+<option>Nanyang Technological University</option>
+<option>Rice Univ.</option>
+<option>Univ. of Washington</option>
+<option>Univ. of Texas, Austin</option>
+<option>Univ. Bern</option>
+<option>Politecnico di Milano</option>
+<option>Seoul National Univ.</option>
+<option>Leiden Univ.</option>
+<option>Ohio State Univ.</option>
+<option>Tecnológico de Monterrey</option>
+<option>Zhejiang Univ.</option>
+<option>Rijksuniversiteit Groningen</option>
+<option>Univ. Paris-Sud</option>
+<option>Texas A&M Univ.</option>
+<option>Germany - Freie University Berlin</option>
+<option>Karolinska Institutet</option>
+<option>Purdue Univ.</option>
+<option>Osaka Univ.</option>
+<option>Georgia Tech.</option>
+<option>Nanjing Univ.</option>
+<option>Pohang Institute of Science and Technology</option>
+<option>Technion Israel Institute of Technology</option>
+<option>Univ. Of Oslo</option>
+<option>Univ. Of Alberta</option>
+<option>Univ. Basel</option>
+<option>Lomonosov Moscow State Univ.</option>
+<option>National Taiwan Univ.</option>
+<option>Univ. Of Science and Technology of China</option>
+<option>Keio Univ.</option>
+<option>Univ. of Michigan- Ann Arbor</option>
+<option>RWTH Aachen University</option>
+<option>EDHEC</option>
+<option>Univ. De Genève</option>
+<option>Trinity College Dublin</option>
+<option>Rutgers Univ.</option>
+<option>University of Iceland</option>
+<option>Scuola Normale Superiore di Pisa</option>
+<option>The City University of Hong Kong</option>
+<option>Tel Aviv Univ.</option>
+<option>Univ. of Auckland</option>
+<option>National Tsing Hua University</option>
+<option>Univ. of Florida</option>
+<option>Univ. of Wisconsin- Madison</option>
+<option>Universität Wien</option>
+<option>St. Peterburg State Univ.</option>
+<option>Univ. of Buenos Aires </option>
+<option>American University of Dubai</option>
+<option>University of Malaya (UM)</option>
+<option>King Abdulaziz Univ.</option>
+<option>Univ. Nacional Autónoma de México</option>
+                    </select>
+            </p>
+            </div>
+            <!-- End question -->
+             <!-- Start question -->
+             <div class="form-group">
+                <label>World universities database:</label>
+            <p>
+              <select id="univ-chooser2" multiple="multiple" name="rank_all[]">
+                    <optgroup label="Argentina">
+<option>Instituto Universitario del Gran Rosario</option>
+<option>Instituto Universitario Escuela Argentina de Negocios</option>
+<option>Instituto Universitario Italiano de Rosario</option>
+<option>Pontificia Universidad Católica Argentina</option>
+<option>Universidad Abierta Interamericana</option>
+<option>Universidad Adventista del Plata</option>
+<option>Universidad Argentina de la Empresa</option>
+<option>Universidad Argentina John F. Kennedy</option>
+<option>Universidad Atlántida Argentina</option>
+<option>Universidad Austral</option>
+<option>Universidad Autónoma de Entre Ríos </option>
+<option>Universidad Blas Pascal</option>
+<option>Universidad CAECE</option>
+<option>Universidad Católica de Córdoba</option>
+<option>Universidad Católica de Cuyo</option>
+<option>Universidad Católica de La Plata</option>
+<option>Universidad Católica de Salta</option>
+<option>Universidad Católica de Santa Fe</option>
+<option>Universidad Católica de Santiago del Estero</option>
+<option>Universidad Champagnat</option>
+<option>Universidad de Belgrano</option>
+<option>Universidad de Buenos Aires</option>
+<option>Universidad de Ciencias Empresariales y Sociales</option>
+<option>Universidad de Concepción del Uruguay</option>
+<option>Universidad de Flores</option>
+<option>Universidad de la Cuenca del Plata</option>
+<option>Universidad de la Fraternidad de Agrupaciones Santo Tomás de Aquino</option>
+<option>Universidad de la Marina Mercante</option>
+<option>Universidad de Mendoza</option>
+<option>Universidad de Morón</option>
+<option>Universidad de Palermo</option>
+<option>Universidad de San Andrés</option>
+<option>Universidad del Aconcagua</option>
+<option>Universidad del CEMA</option>
+<option>Universidad del Centro Educativo Latinoamericano</option>
+<option>Universidad del Cine</option>
+<option>Universidad del Este</option>
+<option>Universidad del Museo Social Argentino </option>
+<option>Universidad del Norte Santo Tomás de Aquino </option>
+<option>Universidad del Salvador </option>
+<option>Universidad Empresarial Siglo 21 </option>
+<option>Universidad Favaloro </option>
+<option>Universidad Gastón Dachary </option>
+<option>Universidad ISALUD </option>
+<option>Universidad Juan Agustín Maza </option>
+<option>Universidad Maimónides </option>
+<option>Universidad Nacional Arturo Jaureche</option>
+<option>Universidad Nacional de Avellaneda</option>
+<option>Universidad Nacional de Catamarca</option>
+<option>Universidad Nacional de Chilecito</option>
+<option>Universidad Nacional de Córdoba</option>
+<option>Universidad Nacional de Cuyo</option>
+<option>Universidad Nacional de Entre Ríos</option>
+<option>Universidad Nacional de Formosa</option>
+<option>Universidad Nacional de General San Martín</option>
+<option>Universidad Nacional de General Sarmiento</option>
+<option>Universidad Nacional de Jujuy</option>
+<option>Universidad Nacional de la Matanza</option>
+<option>Universidad Nacional de la Pampa</option>
+<option>Universidad Nacional de la Patagonia Austral</option>
+<option>Universidad Nacional de la Patagonia San Juan Bosco</option>
+<option>Universidad Nacional de la Plata</option>
+<option>Universidad Nacional de la Rioja</option>
+<option>Universidad Nacional de Lanús</option>
+<option>Universidad Nacional de Lomas de Zamora</option>
+<option>Universidad Nacional de Luján</option>
+<option>Universidad Nacional de Mar del Plata</option>
+<option>Universidad Nacional de Misiones</option>
+<option>Universidad Nacional de Moreno</option>
+<option>Universidad Nacional de Quilmes</option>
+<option>Universidad Nacional de Río Cuarto</option>
+<option>Universidad Nacional de Río Negro</option>
+<option>Universidad Nacional de Rosario</option>
+<option>Universidad Nacional de Salta</option>
+<option>Universidad Nacional de San Juan</option>
+<option>Universidad Nacional de San Luis</option>
+<option>Universidad Nacional de Santiago del Estero</option>
+<option>Universidad Nacional de Tres de Febrero</option>
+<option>Universidad Nacional de Tucumán</option>
+<option>Universidad Nacional de Villa María</option>
+<option>Universidad Nacional del Centro de la Provincia de Buenos Aires</option>
+<option>Universidad Nacional del Chaco Austral</option>
+<option>Universidad Nacional del Comahue</option>
+<option>Universidad Nacional del Litoral</option>
+<option>Universidad Nacional del Nordeste</option>
+<option>Universidad Nacional del Noroeste de la Provincia de Buenos Aires</option>
+<option>Universidad Nacional del Sur</option>
+<option>Universidad Notarial Argentina </option>
+<option>Universidad Popular de Madres de Plaza de Mayo </option>
+<option>Universidad San Pablo - Tucumán </option>
+<option>Universidad Tecnológica Nacional</option>
+<option>Universidad Torcuato Di Tella </option>
+</optgroup>
+<optgroup label="Australia">
+<option>Australian National University</option>
+<option>Bond University</option>
+<option>Deakin University</option>
+<option>Flinders University</option>
+<option>Griffith University</option>
+<option>James Cook University</option>
+<option>La Trobe University</option>
+<option>Macquarie Graduate School of Management</option>
+<option>Macquarie University</option>
+<option>Melbourne Business School</option>
+<option>Monash University</option>
+<option>Murdoch University</option>
+<option>RMIT University</option>
+<option>University of Melbourne</option>
+<option>University of New England</option>
+<option>University of New South Wales</option>
+<option>University of Newcastle</option>
+<option>University of Queensland</option>
+<option>University of South Australia</option>
+<option>University of Sydney</option>
+<option>University of Tasmania</option>
+<option>University of Western Australia</option>
+<option>University of Western Sydney</option>
+<option>University of Wollongong</option>
+
+</optgroup>
+<optgroup label="Austria">
+<option>AAU Klagenfurt</option>
+<option>BOKU Wien</option>
+<option>FH Burgenland</option>
+<option>FH Campus Wien</option>
+<option>FH des BFI Wien</option>
+<option>FH Joanneum</option>
+<option>FH Kärnten</option>
+<option>FH Krems</option>
+<option>FH Kufstein Tirol</option>
+<option>FH Oberösterreich</option>
+<option>FH Salzburg</option>
+<option>FH St.Pölten</option>
+<option>FH Technikum Wien</option>
+<option>FH Vorarlberg</option>
+<option>FHWien der WKW</option>
+<option>FH Wiener Neustadt</option>
+<option>Graz Campus 02</option>
+<option>Lauder Business School</option>
+<option>MCI Innsbruck</option>
+<option>MODUL University Vienna</option>
+<option>Montanuniversität Leoben</option>
+<option>Privatuni. Schloss Seeburg</option>
+<option>TU Graz</option>
+<option>TU Wien</option>
+<option>Universität Graz</option>
+<option>Universität Innsbruck</option>
+<option>Universität Linz</option>
+<option>Universität Salzburg</option>
+<option>Universität Wien</option>
+<option>Webster University Vienna</option>
+<option>WU Wien</option>
+
+</optgroup>
+<optgroup label="Brazil">
+<option>Coppead</option>
+<option>Fundação Armando Álvares Penteado </option>
+<option>Fundação Getulio Vargas</option>
+<option>Pontifícia Universidade Católica de São Paulo</option>
+<option>Pontifícia Universidade Católica do Rio de Janeiro</option>
+<option>Pontifícia Universidade Católica do Rio Grande do Sul</option>
+<option>Universidade de Brasília</option>
+<option>Universidade de São Paulo</option>
+<option>Universidade do Estado de Santa Catarina</option>
+<option>Universidade do Estado do Rio de Janeiro</option>
+<option>Universidade Estadual de Campinas</option>
+<option>Universidade Estadual Paulista «Júlio de Mesquita Filho»</option>
+<option>Universidade Federal da Bahia</option>
+<option>Universidade Federal de Minas Gerais</option>
+<option>Universidade Federal de Pernambuco</option>
+<option>Universidade Federal de Santa Maria</option>
+<option>Universidade Federal de São Carlos</option>
+<option>Universidade Federal de São Paulo</option>
+<option>Universidade Federal de Viçosa</option>
+<option>Universidade Federal do Ceará</option>
+<option>Universidade Federal do Paraná</option>
+<option>Universidade Federal do Rio de Janeiro</option>
+<option>Universidade Federal do Rio Grande do Sul</option>
+<option>Universidade Federal Fluminense</option>
+<option>Universidade Presbiteriana Mackenzie</option>
+</optgroup>
+
+<optgroup label="Canada">
+<option>Brock University</option>
+<option>Carleton University</option>
+<option>Concordia University</option>
+<option>Dalhousie University</option>
+<option>Laval University</option>
+<option>McGill University</option>
+<option>McMaster University</option>
+<option>Memorial University of Newfoundland</option>
+<option>Queen's University</option>
+<option>Ryerson University</option>
+<option>Simon Fraser University</option>
+<option>Université du Québec à Montréal</option>
+<option>Université du Québec à Rimouski</option>
+<option>University of Alberta</option>
+<option>University of British Columbia</option>
+<option>University of Calgary</option>
+<option>University of Guelph</option>
+<option>University of Manitoba</option>
+<option>University of Montreal/HEC</option>
+<option>University of New Brunswick</option>
+<option>University of Ottawa</option>
+<option>University of Regina</option>
+<option>University of Saskatchewan</option>
+<option>University of Sherbrooke</option>
+<option>University of Toronto</option>
+<option>University of Victoria</option>
+<option>University of Waterloo</option>
+<option>University of Western Ontario</option>
+<option>University of Windsor</option>
+<option>Wilfrid Laurier University</option>
+<option>York University</option>
+</optgroup>
+
+<optgroup label="China">
+ 华中科技大学</option>
+<option>上海交通大学</option>
+<option>上海外国语大学</option>
+<option>上海大学</option>
+<option>上海财经大学</option>
+<option>东南大学</option>
+<option>中南大学</option>
+<option>中国人民大学</option>
+<option>中国科学技术大学</option>
+<option>中山大学</option>
+<option>中欧国际工商学院</option>
+<option>兰州大学</option>
+<option>北京外国语大学</option>
+<option>北京大学</option>
+<option>北京师范大学</option>
+<option>华东理工大学</option>
+<option>华南理工大学</option>
+<option>南京大学</option>
+<option>南开大学</option>
+<option>吉林大学</option>
+<option>同济大学</option>
+<option>哈尔滨工业大学</option>
+<option>四川大学</option>
+<option>复旦大学</option>
+<option>天津大学</option>
+<option>宁波大学</option>
+<option>对外经济贸易大学</option>
+<option>山东大学</option>
+<option>武汉大学</option>
+<option>浙江大学</option>
+<option>清华大学</option>
+<option>西安交通大学</option>
+<option>重庆大学</option>
+<option>霍特国际商学院</option>
+<option>香港中文大學 / 香港中文大学</option>
+<option>香港城市大學</option>
+<option>香港大學 / 香港大学</option>
+<option>香港理工大學</option>
+<option>香港科技大學 / 香港科技大学</option>
+
+</optgroup>
+<optgroup label="China engl. FYI">
+<option>Huazhong University of Science and Technology</option>
+<option>Shanghai Jiao Tong University</option>
+<option>Shanghai International Studies University</option>
+<option>Shanghai University</option>
+<option>Shanghai University of Finance and Economics</option>
+<option>Southeast University</option>
+<option>Central South University Changsha</option>
+<option>Renmin University</option>
+<option>University of Science and Technology of China</option>
+<option>Sun Yat-sen University</option>
+<option>CEIBS - China Europe International Business School</option>
+<option>Lanzhou University</option>
+<option>Beijing Foreign Studies University</option>
+<option>Peking University</option>
+<option>Peking Normal University</option>
+<option>East China University of Science and Technology</option>
+<option>South China University of Technology </option>
+<option>Nanjing University</option>
+<option>Nankai University</option>
+<option>Jilin University</option>
+<option>Tongji University</option>
+<option>Harbin Institute of Technology </option>
+<option>Sichuan University</option>
+<option>Fudan University</option>
+<option>Tianjin University</option>
+<option>Ningbo University</option>
+<option>University of International Business and Economics</option>
+<option>Shandong University</option>
+<option>Wuhan University</option>
+<option>Zhejiang University</option>
+<option>Tsinghua University</option>
+<option>Xi'an Jiao Tong University</option>
+<option>Chongqing University</option>
+<option>Hult International Business School</option>
+<option>Chinese University of Hong Kong</option>
+<option>City University of Hong Kong</option>
+<option>University of Hong Kong</option>
+<option>Hong Kong Polytechnic University</option>
+<option>Hong Kong University of Science and Technology </option>
+
+</optgroup>
+<optgroup label="France">
+<option>Arts et Métiers ParisTech</option>
+<option>AUDENCIA Nantes School of Management</option>
+<option>Ecole 42</option>
+<option>Ecole Centrale de Lille</option>
+<option>Ecole Centrale de Lyon</option>
+<option>Ecole Centrale de Nantes</option>
+<option>École Centrale Paris</option>
+<option>École des Mines ParisTech</option>
+<option>École des Ponts ParisTech</option>
+<option>Ecole Normale Supérieure - Paris</option>
+<option>École Normale Supérieure de Lyon</option>
+<option>École Polytechnique ParisTech</option>
+<option>EDHEC</option>
+<option>EM LYON Business School (incl. St Etienne)</option>
+<option>EM STRASBOURG Business School</option>
+<option>ESC Clermont - Graduate School of Management</option>
+<option>ESC Rennes School of Business</option>
+<option>ESCEM</option>
+<option>ESCP Europe</option>
+<option>ESDES École de Management</option>
+<option>ESSCA École de Management</option>
+<option>ESSEC</option>
+<option>EUM-IAE Clermont-Ferrand</option>
+<option>Grenoble École de Management</option>
+<option>Groupe ESC Dijon-Bourgogne</option>
+<option>Groupe ESC Pau</option>
+<option>Groupe ESC Troyes</option>
+<option>Groupe Sup de Co Montpellier Business School</option>
+<option>HEC Paris</option>
+<option>IAE Aix-en-Provence</option>
+<option>IAE Bordeaux</option>
+<option>IAE Caen</option>
+<option>IAE Grenoble</option>
+<option>IAE Lille</option>
+<option>IAE Lyon</option>
+<option>IAE Montpellier</option>
+<option>IAE Paris Panthéon Sorbonne</option>
+<option>IAE Perpignan</option>
+<option>IAE Toulouse</option>
+<option>ICN Business School</option>
+<option>IESEG School of Management</option>
+<option>IGR-IAE Rennes</option>
+<option>INP Grenoble</option>
+<option>INP Toulouse</option>
+<option>INSA Lyon</option>
+<option>INSEEC Business School</option>
+<option>ISAM-IAE Nancy</option>
+<option>ISC Paris Business School</option>
+<option>Kedge Business School</option>
+<option>Mines St Etienne</option>
+<option>NEOMA Business School</option>
+<option>NOVANCIA Business School Paris</option>
+<option>Sciences Po Paris</option>
+<option>SKEMA Business School</option>
+<option>Supélec</option>
+<option>Télécom Bretagne</option>
+<option>Télécom ParisTech</option>
+<option>Toulouse Business School</option>
+<option>Université de Strasbourg</option>
+<option>Université Joseph Fourier Grenoble</option>
+<option>Université Panthéon-Assas</option>
+<option>Université Paris Diderot - Paris 7</option>
+<option>Université Paris Ouest Nanterre La Défense</option>
+<option>Université Paris-Dauphine</option>
+<option>Université Paris-Sud</option>
+<option>Université Pierre et Marie Curie Paris</option>
+
+</optgroup>
+<optgroup label="Germany">
+<option>Albert-Ludwigs-Universität Freiburg</option>
+<option>Beuth Hochschule</option>
+<option>Christian-Albrechts-Universität zu Kiel</option>
+<option>Eberhard Karls Universität Tübingen</option>
+<option>EBS Universität für Wirtschaft und Recht</option>
+<option>Ernst-Moritz-Arndt-Universität Greifswald</option>
+<option>ESCP Europe Berlin</option>
+<option>Europa-Universität Viadrina Frankfurt (Oder)</option>
+<option>Fachhochschule Aachen</option>
+<option>Fachhochschule Südwestfalen</option>
+<option>Frankfurt School of Finance & Management</option>
+<option>Freie Universität Berlin</option>
+<option>Friedrich-Alexander-Universität Erlangen-Nürnberg</option>
+<option>Friedrich-Schiller-Universität Jena</option>
+<option>Georg-August-Universität Göttingen</option>
+<option>Goethe-Universität Frankfurt am Main</option>
+<option>Gottfried Wilhelm Leibniz Universität Hannover</option>
+<option>Hasso Plattner Institut Potsdam</option>
+<option>Heinrich-Heine-Universität Düsseldorf</option>
+<option>HHL - Leipzig Graduate School of Management</option>
+<option>Hochschule Aalen</option>
+<option>Hochschule Darmstadt</option>
+<option>Hochschule Esslingen</option>
+<option>Hochschule Frankfurt am Main</option>
+<option>Hochschule für Technik und Wirtschaft Berlin</option>
+<option>Hochschule für Technik und Wirtschaft Dresden</option>
+<option>Hochschule für Technik, Wirtschaft und Gestaltung Konstanz</option>
+<option>Hochschule Furtwangen</option>
+<option>Hochschule Hamburg</option>
+<option>Hochschule Heilbronn</option>
+<option>Hochschule Karlsruhe – Technik und Wirtschaft</option>
+<option>Hochschule Mannheim</option>
+<option>Hochschule München</option>
+<option>Hochschule Pforzheim</option>
+<option>Hochschule Reutlingen / Reutlingen University of Applied Sciences</option>
+<option>Hochschule Würzburg-Schweinfurt</option>
+<option>Humboldt-Universität zu Berlin</option>
+<option>ISM International School of Management</option>
+<option>Johannes Gutenberg-Universität Mainz</option>
+<option>Julius-Maximilians-Universität Würzburg</option>
+<option>Justus-Liebig-Universität Gießen</option>
+<option>Katholische Universität Eichstätt-Ingolstadt</option>
+<option>KIT Karlsruher Institut für Technologie</option>
+<option>Leuphana Universität Lüneburg</option>
+<option>Ludwig-Maximilians-Universität München</option>
+<option>Martin-Luther-Universität Halle-Wittenberg</option>
+<option>Munich Business School 
+<option>Ostfalia Hochschule</option>
+<option>OTH Amberg-Weiden</option>
+<option>OTH Regensburg</option>
+<option>Otto-Friedrich-Universität Bamberg</option>
+<option>Philipps-Universität Marburg</option>
+<option>Rheinische Friedrich-Wilhelms-Universität Bonn</option>
+<option>Ruhr-Universität Bochum</option>
+<option>RWTH Aachen - Universität</option>
+<option>Technische Hochschule Deggendorf</option>
+<option>Technische Hochschule Ingolstadt</option>
+<option>Technische Hochschule Köln</option>
+<option>Technische Hochschule Nürnberg</option>
+<option>Technische Universität Berlin</option>
+<option>Technische Universität Braunschweig</option>
+<option>Technische Universität Chemnitz</option>
+<option>Technische Universität Clausthal</option>
+<option>Technische Universität Darmstadt</option>
+<option>Technische Universität Dortmund</option>
+<option>Technische Universität Dresden</option>
+<option>Technische Universität Hamburg-Harburg</option>
+<option>Technische Universität Ilmenau</option>
+<option>Technische Universität Kaiserslautern</option>
+<option>Technische Universität München 
+<option>Universität Augsburg</option>
+<option>Universität Bayreuth</option>
+<option>Universität Bielefeld</option>
+<option>Universität Bremen</option>
+<option>Universität des Saarlandes</option>
+<option>Universität Duisburg-Essen</option>
+<option>Universität Hamburg</option>
+<option>Universität Heidelberg</option>
+<option>Universität Hohenheim</option>
+<option>Universität Konstanz</option>
+<option>Universität Leipzig</option>
+<option>Universität Mannheim</option>
+<option>Universität Passau</option>
+<option>Universität Regensburg</option>
+<option>Universität Stuttgart</option>
+<option>Universität Ulm</option>
+<option>Universität Witten/Herdecke</option>
+<option>Universität zu Köln</option>
+<option>Westfälische Wilhelms-Universität Münster</option>
+<option>WHU Vallendar – Otto Beisheim School of Management</option>
+
+</optgroup>
+<optgroup label="India">
+<option>Anna University, Chennai</option>
+<option>Bangalore University</option>
+<option>Bharathidasan Institute of Management</option>
+<option>Christ University, Bangalore</option>
+<option>Hans Raj College, University of Delhi</option>
+<option>Indian Institute of Management</option>
+<option>Indian Institute of Science</option>
+<option>Indian Institute of Technology Bombay</option>
+<option>Indian School of Business </option>
+<option>Institute of Management Technology, Ghaziabad</option>
+<option>International Management Institute, Delhi</option>
+<option>Jamnalal Bajaj Institute of Management Studies</option>
+<option>Jawaharlal Nehru University</option>
+<option>Lady Shri Ram College for Women, University of Delhi</option>
+<option>Loyola College, Chennai</option>
+<option>Madras Christian College </option>
+<option>Management Development Institute, Gurgaon</option>
+<option>Presidency College, Chennai</option>
+<option>S. P. Jain Institute of Management & Research</option>
+<option>Saha Institute of Nuclear Physics</option>
+<option>Shailesh J. Mehta School of Management, IIT Bombay</option>
+<option>Shri Ram College of Commerce </option>
+<option>St Stephen’s College, Delhi</option>
+<option>St. Joseph’s College</option>
+<option>St. Xavier’s College, Kolkata</option>
+<option>SVKM’s Narsee Monjee Institute of Management Studies, Mumbai </option>
+<option>Symbiosis Centre for Management and Human Resource Development (SCMHRD)</option>
+<option>Symbiosis Institute of Business Management, pune (SIBM) Pune</option>
+<option>Symbiosis Society’s College of Arts & Commerce</option>
+<option>University of Calcutta </option>
+<option>University of Delhi </option>
+<option>University of Mumbai </option>
+<option>University of Pune </option>
+<option>Xavier Institute of Management, Bhubaneswar</option>
+<option>XLRI Jamshedpur </option>
+<option>Indian Institute of Technology Roorkee</option>
+<option>Panjab University</option>
+
+</optgroup>
+<optgroup label="Israel">
+<option>Academic Center of Law and Business</option>
+<option>Academic College of Tel Aviv-Jaffa</option>
+<option>Afeka - Tel Aviv Academic College of Engineering</option>
+<option>Ariel University</option>
+<option>Ashkelon Academic College</option>
+<option>Azrieli College of Engineering</option>
+<option>Bar-IlanUniversity</option>
+<option>Ben Gurion University</option>
+<option>Hadassah College</option>
+<option>Hebrew University</option>
+<option>Holon Institute of Technology</option>
+<option>Interdisciplinary Center</option>
+<option>Israel College of Applied Science</option>
+<option>Jerusalem College of Engineering</option>
+<option>Jerusalem College of Technology (Machon Lev)</option>
+<option>Kinneret Academic College</option>
+<option>Netanya Academic College</option>
+<option>Ono Academic College</option>
+<option>Open University</option>
+<option>Ort Braude College</option>
+<option>Peres Academic Center</option>
+<option>Ruppin Academic Center</option>
+<option>Sapir Academic College</option>
+<option>Shaarey Mishpat College of Law</option>
+<option>Shalem College</option>
+<option>Shamoon College of Engineering</option>
+<option>Shenkar College of Engineering and Design</option>
+<option>Technion - IIT</option>
+<option>Technological College of Beer Sheva</option>
+<option>Tel Aviv University</option>
+<option>Tel-Hai College</option>
+<option>University of Haifa</option>
+<option>Weizmann Institute</option>
+<option>Western Galilee College</option>
+<option>Yehuda Regional College</option>
+<option>Yizrael Valley College</option>
+<option>Zefat College</option>
+<option>Zinman College for Physical Education and Sports (Wingate Institute)</option>
+
+</optgroup>
+<optgroup label="Italy">
+<option>Politecnico di Milano</option>
+<option>Politecnico di Torino</option>
+<option>Scuola Normale Superiore di Pisa</option>
+<option>Università Ca' Foscari di Venezia</option>
+<option>Università Cattolica del Sacro Cuore</option>
+<option>Università Commerciale «Luigi Bocconi»</option>
+<option>Università degli Studi di Bari</option>
+<option>Università degli Studi di Catania</option>
+<option>Università degli Studi di Ferrara</option>
+<option>Università degli Studi di Firenze</option>
+<option>Università degli Studi di Genova</option>
+<option>Università degli Studi di Milano </option>
+<option>Università degli Studi di Modena e Reggio Emilia</option>
+<option>Università degli Studi di Napoli «Federico II»</option>
+<option>Università degli Studi di Padova</option>
+<option>Università degli Studi Di Palermo</option>
+<option>Università degli studi di Parma</option>
+<option>Università degli studi di Pavia</option>
+<option>Università degli Studi di Perugia</option>
+<option>Università degli Studi di Pisa</option>
+<option>Università degli Studi di Roma «La Sapienza»</option>
+<option>Università degli Studi di Roma «Tor Vergata»</option>
+<option>Università degli Studi di Siena </option>
+<option>Università degli Studi di Torino</option>
+<option>Università degli Studi di Trento</option>
+<option>Università degli Studi di Trieste</option>
+<option>Università del Piemonte Orientale «Amedeo Avogadro»</option>
+<option>Università di Bologna</option>
+
+</optgroup>
+<optgroup label="Japan">
+<option>愛媛大学</option>
+<option>愛知大学</option>
+<option>北海道大学</option>
+<option>兵庫県立大学</option>
+<option>成蹊大学</option>
+<option>大阪大学</option>
+<option>大阪府立大学</option>
+<option>大阪市立大学</option>
+<option>徳島大学</option>
+<option>東北大学</option>
+<option>東京大学</option>
+<option>首都大学東京</option>
+<option>東京工業大学</option>
+<option>東京農工大学</option>
+<option>東京外国語大学</option>
+<option>東京医科歯科大学 </option>
+<option>法政大学</option>
+<option>福島大学</option>
+<option>福岡大学</option>
+<option>岡山大学</option>
+<option>関西大学</option>
+<option>関西学院大学</option>
+<option>横浜国立大学</option>
+<option>横浜市立大学</option>
+<option>金沢大学</option>
+<option>京都大学</option>
+<option>静岡大学</option>
+<option>九州大学</option>
+<option>立教大学</option>
+<option>立命館大学</option>
+<option>鹿児島大学</option>
+<option>名古屋大学</option>
+<option>明治大学</option>
+<option>奈良先端科学技術大学院大学</option>
+<option>岐阜大学</option>
+<option>埼玉大学</option>
+<option>千葉大学</option>
+<option>青森大学</option>
+<option>青山学院大学</option>
+<option>慶應義塾大学</option>
+<option>群馬大学</option>
+<option>日本大学</option>
+<option>三重大学</option>
+<option>山口大学</option>
+<option>神戸大学</option>
+<option>神奈川大学</option>
+<option>同志社大学</option>
+<option>新潟大学</option>
+<option>信州大学</option>
+<option>熊本大学</option>
+<option>一橋大学</option>
+<option>早稲田大学</option>
+<option>長崎大学</option>
+<option>昭和大学</option>
+<option>中央大学</option>
+<option>筑波大学</option>
+
+</optgroup>
+<optgroup label="Japan engl. FYI">
+<option>Ehime University</option>
+<option>Aichi University</option>
+<option>Hokkaido University</option>
+<option>University of  Hyogo</option>
+<option>Seikei University</option>
+<option>Osaka University</option>
+<option>Osaka Prefecture University</option>
+<option>Osaka City University</option>
+<option>The University of Tokushima</option>
+<option>Tohoku University</option>
+<option>The University of Tokyo</option>
+<option>Tokyo Metropolitan University</option>
+<option>Tokyo Institute of Technology</option>
+<option>Tokyo University of Agriculture and Technology</option>
+<option>Tokyo University of Foreign Studies</option>
+<option>Tokyo Medical and Dental University</option>
+<option>Hosei University</option>
+<option>Fukushima University</option>
+<option>Fukuoka University</option>
+<option>Okayama University</option>
+<option>Kansai University</option>
+<option>Kwansei Gakuin University</option>
+<option>Yokohama National University</option>
+<option>Yokohama City University</option>
+<option>Kanazawa University</option>
+<option>Kyoto University</option>
+<option>Shizuoka University</option>
+<option>Kyushu University</option>
+<option>Rikkyo University</option>
+<option>Ritsumeikan University</option>
+<option>Kagoshima University</option>
+<option>Nagoya University</option>
+<option>Meiji University</option>
+<option>Nara Institute of Science and Technology</option>
+<option>Gifu University</option>
+<option>Saitama University</option>
+<option>Chiba University</option>
+<option>Aomori University</option>
+<option>Aoyama Gakuin University</option>
+<option>Keio University</option>
+<option>Gunma University</option>
+<option>Nihon University</option>
+<option>Mie University</option>
+<option>Yamaguchi University</option>
+<option>Kobe University</option>
+<option>Kanagawa University</option>
+<option>Doshisha University</option>
+<option>Niigata University</option>
+<option>Shinshu University</option>
+<option>Kumamoto University</option>
+<option>Hitotsubashi University</option>
+<option>Waseda University</option>
+<option>Nagasaki University</option>
+<option>Showa University</option>
+<option>Chuo University</option>
+<option>University of Tsukuba</option>
+
+</optgroup>
+<optgroup label="Mexico">
+<option>Instituto Panamericano de Alta Dirección de Empresa</option>
+<option>Instituto Politécnico Nacional</option>
+<option>Instituto Tecnológico Autónomo de México </option>
+<option>Tecnológico de Monterrey</option>
+<option>Universidad Anáhuac México Norte</option>
+<option>Universidad Autónoma de Guadalajara</option>
+<option>Universidad Autónoma de Nuevo León</option>
+<option>Universidad Autónoma Metropolitana</option>
+<option>Universidad de Guadalajara</option>
+<option>Universidad del Valle de México</option>
+<option>Universidad Iberoamericana</option>
+<option>Universidad Nacional Autónoma de México</option>
+
+</optgroup>
+<optgroup label="Singapore">
+<option>Nanyang Polytechnic, Singapore</option>
+<option>Nanyang Technological University</option>
+<option>National Institute of Education, Singapore</option>
+<option>National University of Singapore</option>
+<option>Ngee Ann Polytechnic, Singapore</option>
+<option>Republic Polytechnic, Singapore</option>
+<option>Singapore Institute of Management</option>
+<option>Singapore Institute of Technology</option>
+<option>Singapore Management University</option>
+<option>Singapore Polytechnic</option>
+<option>Singapore University of Technology and Design</option>
+<option>Temasek Polytechnic, Singapore</option>
+
+</optgroup>
+<optgroup label="South Africa">
+<option>Cape Peninsula University of Technology</option>
+<option>Central University of Technology</option>
+<option>Durban University of Technology</option>
+<option>Gordon Institute of Business Science </option>
+<option>Henley School of Business </option>
+<option>Mangosuthu University of Technology</option>
+<option>Milpark Business School</option>
+<option>Nelson Mandela Metropolitan University</option>
+<option>North-West University</option>
+<option>Rhodes University</option>
+<option>Sol Plaatje University</option>
+<option>Tshwane University of Technology</option>
+<option>University of Cape Town</option>
+<option>University of Fort Hare</option>
+<option>University of Johannesburg</option>
+<option>University of KwaZulu-Natal</option>
+<option>University of Limpopo</option>
+<option>University of Mpumalanga</option>
+<option>University of Pretoria</option>
+<option>University of South Africa</option>
+<option>University of Stellenbosch</option>
+<option>University of the Free State</option>
+<option>University of the Western Cape</option>
+<option>University of the Witwatersrand</option>
+<option>University of Venda</option>
+<option>University of Zululand</option>
+<option>Vaal University of Technology</option>
+<option>Walter Sisulu University</option>
+
+</optgroup>
+<optgroup label="South Korea">
+<option>Ajou University</option>
+<option>Chonbuk National University</option>
+<option>Chonnam National University</option>
+<option>Chosun University</option>
+<option>Chung-Ang University(CAU)</option>
+<option>Chungbuk National University</option>
+<option>Chungnam National University</option>
+<option>Dankook University</option>
+<option>Dong-A University</option>
+<option>Dongguk University</option>
+<option>Ewha Womans University</option>
+<option>Gangneung-Wonju National University</option>
+<option>Gyeongsang National University</option>
+<option>Hallym University</option>
+<option>Hankuk (Korea) University of Foreign Studies</option>
+<option>Hanyang University</option>
+<option>Hongik University</option>
+<option>Inha University</option>
+<option>Inje University</option>
+<option>Jeju National University</option>
+<option>Korea Advanced Institute of Science & Technology (KAIST)</option>
+<option>Kangwon National University</option>
+<option>Keimyung University</option>
+<option>Konkuk University</option>
+<option>Kookmin University</option>
+<option>Korea University</option>
+<option>Kwangwoon University</option>
+<option>Kyung Hee University</option>
+<option>Kyungpook National University</option>
+<option>Pohang University of Science and Technology (POSTECH)</option>
+<option>Pukyong National University</option>
+<option>Pusan National University</option>
+<option>Sejong University</option>
+<option>Seoul National University</option>
+<option>Seoul National University of Science and Technology</option>
+<option>Sogang University</option>
+<option>Sookmyung Women's University</option>
+<option>Soonchunhyang University</option>
+<option>Soongsil University</option>
+<option>Sungkyunkwan University (SKKU)</option>
+<option>The Catholic University of Korea</option>
+<option>University of Seoul</option>
+<option>University of Ulsan</option>
+<option>Yeungnam University</option>
+<option>Yonsei University</option>
+
+</optgroup>
+<optgroup label="Spain">
+<option>ESADE Business School</option>
+<option>IE University / IE Business School</option>
+<option>Universidad Autónoma de Madrid</option>
+<option>Universidad Carlos III de Madrid</option>
+<option>Universidad Complutense de Madrid</option>
+<option>Universidad de Deusto</option>
+<option>Universidad de Granada</option>
+<option>Universidad de Navarra</option>
+<option>Universidad de Oviedo</option>
+<option>Universidad de Salamanca</option>
+<option>Universidad de Sevilla</option>
+<option>Universidad del País Vasco</option>
+<option>Universidad Politécnica de Madrid</option>
+<option>Universidad Pontificia Comillas ICAI ICADE</option>
+<option>Universidad Rey Juan Carlos</option>
+<option>Universidad Zaragoza</option>
+<option>Universidade de Santiago de Compostela</option>
+<option>Universitat Autónoma de Barcelona</option>
+<option>Universitat de Barcelona</option>
+<option>Universitat de València</option>
+<option>Universitat Politècnica de Catalunya</option>
+<option>Universitat Politècnica de València</option>
+<option>Universitat Pompeu Fabra</option>
+<option>Universitat Ramon Llull</option>
+<option>Universitat Rovira i Virgili</option>
+
+</optgroup>
+<optgroup label="The Netherlands">
+<option>Erasmus Universiteit Rotterdam</option>
+<option>Fontys Hogescholen</option>
+<option>Hogeschool Inholland</option>
+<option>Hogeschool Rotterdam</option>
+<option>Hogeschool Utrecht</option>
+<option>Hogeschool van Amsterdam</option>
+<option>Maastricht School of Management</option>
+<option>Nyenrode Business Universiteit</option>
+<option>Radboud Universiteit Nijmegen</option>
+<option>Rijksuniversiteit Groningen</option>
+<option>Technische Universiteit Delft</option>
+<option>Technische Universiteit Eindhoven</option>
+<option>TIAS School for Business and Society</option>
+<option>Universiteit Leiden</option>
+<option>Universiteit Maastricht</option>
+<option>Universiteit Twente</option>
+<option>Universiteit Utrecht</option>
+<option>Universiteit van Amsterdam</option>
+<option>Universiteit van Tilburg</option>
+<option>Vrije Universiteit Amsterdam</option>
+<option>Wageningen Universiteit en Researchcentrum</option>
+
+</optgroup>
+<optgroup label="Turkey">
+<option>Ankara Üniversitesi</option>
+<option>İhsan Doğramacı Bilkent Üniversitesi</option>
+<option>Boğaziçi Üniversitesi</option>
+<option>Ege üniversitesi</option>
+<option>Gazi Üniversitesi</option>
+<option>Hacettepe Üniversitesi</option>
+<option>Haliç Üniversitesi</option>
+<option>İstanbul Üniversitesi</option>
+<option>İzmir Ekonomi Üniversitesi</option>
+<option>Kocaeli Üniversitesi</option>
+<option>Marmara Üniversitesi</option>
+<option>Muğla Sıtkı Koçman Üniversitesi</option>
+<option>Orta Doğu Teknik Üniversitesi</option>
+<option>Sakarya Üniversitesi</option>
+<option>Yakin Doğu Üniversitesi</option>
+<option>Yıldız Teknik Üniversitesi</option>
+<option>Koç Üniversitesi</option>
+<option>Sabancı Üniversitesi</option>
+
+</optgroup>
+<optgroup label="UAE">
+<option>Abu Dhabi University</option>
+<option>Ajman University of Science and Technology</option>
+<option>Al Ain University of Science and Technology</option>
+<option>American University in Dubai</option>
+<option>American University in the Emirates</option>
+<option>American University of Ras Al Khaimah</option>
+<option>American University of Sharjah</option>
+<option>Canadian University of Dubai</option>
+<option>Higher Colleges of Technology</option>
+<option>Ittihad University</option>
+<option>Khalifa University</option>
+<option>Manipal University, Dubai</option>
+<option>Masdar Institute of Science and Technology</option>
+<option>Paris-Sorbonne University in Abu Dhabi</option>
+<option>Rochester Institute of Technology, Dubai</option>
+<option>The British University in Dubai</option>
+<option>The Petroleum Institute</option>
+<option>United Arab Emirates University</option>
+<option>University of Dubai</option>
+<option>University of Sharjah</option>
+<option>University of Wollongong in Dubai</option>
+<option>Zayed University</option>
+
+</optgroup>
+<optgroup label="UK">
+<option>Aberystwyth University</option>
+<option>Aston University</option>
+<option>Bangor University</option>
+<option>Brunel University</option>
+<option>Cardiff University</option>
+<option>City University London</option>
+<option>Cranfield School of Management</option>
+<option>ESCP Europe</option>
+<option>Goldsmiths, University of London</option>
+<option>Heriot-Watt University</option>
+<option>Hult International Business School</option>
+<option>Imperial College London</option>
+<option>King's College London</option>
+<option>Lancaster University</option>
+<option>London Business School</option>
+<option>London School of Economics</option>
+<option>London School Of Hygiene and Tropical Medicine</option>
+<option>Loughborough University</option>
+<option>Middlesex University London</option>
+<option>Newcastle University, Newcastle upon Tyne</option>
+<option>Queen Mary, University of London</option>
+<option>Queen's University Belfast</option>
+<option>Royal Holloway, University of London</option>
+<option>Swansea University</option>
+<option>The Fuqua School of Business</option>
+<option>The Open University</option>
+<option>The School of Oriental and African Studies, Univ. of London</option>
+<option>University College London</option>
+<option>University of Aberdeen</option>
+<option>University of Bath</option>
+<option>University of Birmingham</option>
+<option>University of Bradford</option>
+<option>University of Bristol</option>
+<option>University of Cambridge</option>
+<option>University of Dundee</option>
+<option>University of Durham</option>
+<option>University of East Anglia</option>
+<option>University of Edinburgh</option>
+<option>University of Essex</option>
+<option>University of Exeter</option>
+<option>University of Glasgow</option>
+<option>University of Hertfordshire</option>
+<option>University of Hull</option>
+<option>University of Kent</option>
+<option>University of Law</option>
+<option>University of Leeds</option>
+<option>University of Leicester</option>
+<option>University of Liverpool</option>
+<option>University of Manchester</option>
+<option>University of Nottingham</option>
+<option>University of Oxford</option>
+<option>University of Reading</option>
+<option>University of Sheffield</option>
+<option>University of Southampton</option>
+<option>University of St Andrews</option>
+<option>University of Strathclyde</option>
+<option>University of Surrey</option>
+<option>University of Sussex</option>
+<option>University of Warwick</option>
+<option>University of York</option>
+
+</optgroup>
+<optgroup label="USA">
+<option>Arizona State University</option>
+<option>Babson College</option>
+<option>Boston College</option>
+<option>Boston University</option>
+<option>Brandeis University</option>
+<option>Brigham Young University</option>
+<option>Brown University</option>
+<option>California Institute of Technology</option>
+<option>Carnegie Mellon University</option>
+<option>Case Western Reserve University</option>
+<option>Colorado School of Mines </option>
+<option>Columbia University</option>
+<option>Cornell University</option>
+<option>Cox School of Business – SMU </option>
+<option>Dartmouth College</option>
+<option>Duke University</option>
+<option>Emory University</option>
+<option>Florida Institute of Technology</option>
+<option>Fordham University</option>
+<option>George Washington University</option>
+<option>Georgetown University</option>
+<option>Georgia Institute of Technology</option>
+<option>Gettysburg College</option>
+<option>Harvard University</option>
+<option>Hult International Business School</option>
+<option>Indiana University</option>
+<option>Indiana University Bloomington</option>
+<option>Iowa State University</option>
+<option>Johns Hopkins University</option>
+<option>Massachusetts Institute of Technology</option>
+<option>Michigan State University</option>
+<option>New York University</option>
+<option>North Carolina State University </option>
+<option>Northeastern University </option>
+<option>Northwestern University</option>
+<option>Ohio State University</option>
+<option>Pennsylvania State University</option>
+<option>Princeton University</option>
+<option>Purdue University</option>
+<option>Rensselaer Polytechnic Institute </option>
+<option>Rice University</option>
+<option>Rutgers University, The State University of New Jersey </option>
+<option>Southern Methodist University</option>
+<option>Stanford University</option>
+<option>Stony Brook University - The State University of New York</option>
+<option>Texas A&M University</option>
+<option>The University of Texas at Dallas</option>
+<option>Thunderbird School of Global Management</option>
+<option>Tufts University</option>
+<option>Tulane University: Freeman School of Business</option>
+<option>University at Buffalo</option>
+<option>University of Arizona</option>
+<option>University of California, Berkeley</option>
+<option>University of California, Davis</option>
+<option>University of California, Irvine</option>
+<option>University of California, Los Angeles</option>
+<option>University of California, Riverside</option>
+<option>University of California, San Diego</option>
+<option>University of California, San Francisco</option>
+<option>University of California, Santa Barbara</option>
+<option>University of California, Santa Cruz</option>
+<option>University of Chicago</option>
+<option>University of Cincinnati</option>
+<option>University of Colorado Boulder</option>
+<option>University of Delaware</option>
+<option>University of Florida</option>
+<option>University of Illinois, Urbana Champaign</option>
+<option>University of Iowa</option>
+<option>University of Kansas</option>
+<option>University of Maryland</option>
+<option>University of Massachusetts</option>
+<option>University of Miami: School of Business Administration</option>
+<option>University of Michigan, Ann Arbor</option>
+<option>University of Minnesota</option>
+<option>University of North Carolina</option>
+<option>University of Notre Dame</option>
+<option>University of Pennsylvania</option>
+<option>University of Pittsburgh</option>
+<option>University of Rochester</option>
+<option>University of South Carolina</option>
+<option>University of Southern California</option>
+<option>University of Texas, Austin</option>
+<option>University of Utah</option>
+<option>University of Virginia</option>
+<option>University of Washington</option>
+<option>University of Wisconsin, Madison</option>
+<option>University of Wyoming</option>
+<option>Vanderbilt University</option>
+<option>Wake Forest University</option>
+<option>Washington University in St Louis</option>
+<option>Yale University</option>
+<option>Yeshiva University</option>
+
+
+                    </select>
+            </p>
+            </div>
+            <!-- End question -->
+            
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+                <input type="hidden" name="step" value="2">
+        </form>
+        <hr>
+        <footer>
+            <p>&copy; Iteas 2017</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap-multiselect-master/dist/js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" href="js/vendor/bootstrap-multiselect-master/dist/css/bootstrap-multiselect.css" type="text/css" />
+    <!-- Initialize the plugin: -->
+    <script type="text/javascript">
+    
+    $(document).ready(function() {
+        $('#univ-chooser1').multiselect({
+            maxHeight: 400,
+            enableFiltering: true,
+            enableCaseInsensitiveFiltering: true,
+            onChange: function(option, checked) {
+                // Get selected options.
+                var selectedOptions = $('#univ-chooser1 option:selected');
+                var totalSelected = $('#univ-chooser1 option:selected').length + $('#univ-chooser2 option:selected').length
+                if (totalSelected >= 10) {
+                    // Disable all other checkboxes.
+                    var nonSelectedOptions = $('#univ-chooser1 option').filter(function() {
+                        return !$(this).is(':selected');
+                    });
+ 
+                    nonSelectedOptions.each(function() {
+                        var input = $('input[value="' + $(this).val() + '"]');
+                        input.prop('disabled', true);
+                        input.parent('li').addClass('disabled');
+                    });
+                }
+                else {
+                    // Enable all checkboxes.
+                    $('#univ-chooser1 option').each(function() {
+                        var input = $('input[value="' + $(this).val() + '"]');
+                        input.prop('disabled', false);
+                        input.parent('li').addClass('disabled');
+                    });
+                }
+            }
+        });
+        $('#univ-chooser2').multiselect({
+            maxHeight: 400,
+            enableFiltering: true,
+            enableCaseInsensitiveFiltering: true,
+            onChange: function(option, checked) {
+                // Get selected options.
+                var selectedOptions = $('#univ-chooser2 option:selected');
+                var totalSelected = $('#univ-chooser1 option:selected').length + $('#univ-chooser2 option:selected').length
+                if (totalSelected >= 10) {
+                    // Disable all other checkboxes.
+                    var nonSelectedOptions = $('#univ-chooser2 option').filter(function() {
+                        return !$(this).is(':selected');
+                    });
+ 
+                    nonSelectedOptions.each(function() {
+                        var input = $('input[value="' + $(this).val() + '"]');
+                        input.prop('disabled', true);
+                        input.parent('li').addClass('disabled');
+                    });
+                }
+                else {
+                    // Enable all checkboxes.
+                    $('#univ-chooser2 option').each(function() {
+                        var input = $('input[value="' + $(this).val() + '"]');
+                        input.prop('disabled', false);
+                        input.parent('li').addClass('disabled');
+                    });
+                }
+            }
+        });
+    });
+    </script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
