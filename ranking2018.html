@@ -1,0 +1,268 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    body {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    table>thead>tr>th {
+        color: #fff;
+        background-color: #242e37;
+        text-align: center;
+        font-size: 12px;
+    }
+    table>tbody>tr>td {
+        font-size: 12px;
+        color: #242e37;
+    }
+
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/pdfmake-0.1.27/dt-1.10.15/b-1.4.0/b-html5-1.4.0/b-print-1.4.0/r-2.1.1/datatables.min.css"/>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+<table id="ranking"   class="table table-striped table-bordered"   cellspacing="0" width="100%">
+
+</table>
+    <hr>
+    <footer>
+        <p>&copy; Iteas 2018</p>
+    </footer>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.4.0/b-html5-1.4.0/b-print-1.4.0/r-2.1.1/datatables.min.js"></script>
+
+    <!-- Initialize the plugin: -->
+    <script type="text/javascript">
+    let dataSet = [
+  ["Harvard University","http://www.harvard.edu/","United States",1,"2","↑"],
+  ["California Institute of Technology","http://www.caltech.edu/","United States",2,"1","↓"],
+  ["Massachusetts Institute of Technology","http://www.mit.edu/","United States",3,"4","↑"],
+  ["University of Cambridge","http://www.cam.ac.uk/","United Kingdom",4,"5","↑"],
+  ["Stanford University","http://standford-university.edu.tf/","United States",5,"7","↑"],
+  ["Technical University of Munich","https://www.tum.de","Germany",6,"8","↑"],
+  ["Princeton University","http://www.princeton.edu/","United States",7,"11","↑"],
+  ["Yale University","http://www.yale.edu/","United States",8,"10","↑"],
+  ["The University of Tokyo","http://www.toyo.ac.jp/","Japan",9,"9","→"],
+  ["National University of Singapore","http://www.nus.edu.sg/","Singapore",10,"16","↑"],
+  ["University of Oxford","http://www.ox.ac.uk/","United Kingdom",11,"15","↑"],
+  ["ETH Zurich","https://www.ethz.ch/","Switzerland",12,"26","↑"],
+  ["University of Toronto","https://www.utoronto.ca/","Canada",13,"13","→"],
+  ["Columbia University","http://www.columbia.edu/","United States",14,"3","↓"],
+  ["New York University","http://www.nyu.edu/","United States",15,"43","↑"],
+  ["Hong Kong University of Science and Technology","http://www.ust.hk/","Hong Kong",16,"12","↓"],
+  ["Imperial College London","http://www.ic.ac.uk/","United Kingdom",17,"17","→"],
+  ["McGill University","http://www.mcgill.ca/","Canada",18,"18","→"],
+  ["Peking University","http://www.pku.edu.cn/","China",19,"14","↓"],
+  ["University of Melbourne","http://www.unimelb.edu.au/","Australia",20,"50","↑"],
+  ["Johns Hopkins University","http://www.jhu.edu/","United States",21,"28","↑"],
+  ["University of California, Berkeley","http://www.berkeley.edu/","United States",22,"20","↓"],
+  ["HEC Paris","http://www.hec.fr/","France",23,"23","→"],
+  ["IE University","http://www.ie.edu/","Spain",24,"24","→"],
+  ["École Polytechnique Fédérale de Lausanne","https://www.epfl.ch","Switzerland",25,"35","↑"],
+  ["LMU Munich","https://www.en.uni-muenchen.de/","Germany",26,"31","↑"],
+  ["Dartmouth College","http://home.dartmouth.edu/","United States",27,"33","↑"],
+  ["Indian Institute of Science","https://www.iisc.ac.in","India",28,"29","↑"],
+  ["King’s College London","http://www.kcl.ac.uk/","United Kingdom",29,"25","↓"],
+  ["École Polytechnique","https://www.polytechnique.edu","France",30,"22","↓"],
+  ["Ecole Normale Supérieure Paris (PSL)","http://www.ens.fr","France",31,"32","↑"],
+  ["Tokyo Institute of Technology","http://www.titech.ac.jp/","Japan",32,"19","↓"],
+  ["Mines ParisTech (PSL)","http://www.mines-paristech.fr","France",33,"36","↑"],
+  ["EMLYON","https://www.em-lyon.com/fr/","France",34,"27","↓"],
+  ["University of Manchester","http://www.man.ac.uk/","United Kingdom",35,"34","↓"],
+  ["Shanghai Jiao Tong University","http://www.sjtu.edu.cn/","China",36,"30","↓"],
+  ["University of Montreal","http://www.hec.ca/","Canada",37,"44","↑"],
+  ["Heidelberg University","https://www.heidelberg.edu","Germany",38,"54","↑"],
+  ["CentraleSupélec","http://www.centralesupelec.fr","France",39,"41","↑"],
+  ["Duke University","http://www.duke.edu/","United States",40,"37","↓"],
+  ["Rice University","https://www.rice.edu","United States",41,"97","↑"],
+  ["University of Chicago","http://www.uchicago.edu/","United States",42,"52","↑"],
+  ["University of Sydney","http://www.usyd.edu.au/","Australia",43,"48","↑"],
+  ["Fudan University","http://www.fudan.edu.cn/","China",44,"38","↓"],
+  ["Stockholm University","http://www.su.se/","Sweden",45,"59","↑"],
+  ["Australian National University","http://www.anu.edu.au/","Australia",46,"21","↓"],
+  ["Brown University","http://www.brown.edu/","United States",47,"42","↓"],
+  ["University of Helsinki","http://www.helsinki.fi/","Finland",48,"83","↑"],
+  ["University of Copenhagen","http://www.ku.dk/","Denmark",49,"67","↑"],
+  ["University of Navarra","http://www.unav.es/","Spain",50,"66","↑"],
+  ["Humboldt University of Berlin","https://www.hu-berlin.de/","Germany",51,"58","↑"],
+  ["Tsinghua University","http://www.tsinghua.edu.cn/","China",52,"55","↑"],
+  ["Indian Institute of Technology Delhi","http://www.iitd.ernet.in/","India",53,"145","↑"],
+  ["Brigham Young University","https://www.byu.edu","United States",54,"39","↓"],
+  ["Delft University of Technology","http://www.tudelft.nl/","Netherlands",55,"69","↑"],
+  ["University of British Columbia","http://www.ubc.ca/","Canada",56,"45","↓"],
+  ["Ohio State University","https://www.osu.edu/","United States",57,"107","↑"],
+  ["Hebrew University of Jerusalem","http://www.huji.ac.il/","Israel",58,"62","↑"],
+  ["Kyoto University","http://www.kyoto-u.ac.jp/","Japan",59,"63","↑"],
+  ["Monash University","http://www.monash.edu.au/","Australia",60,"57","↓"],
+  ["Carnegie Mellon University","http://www.cmu.edu/","United States",61,"53","↓"],
+  ["University of California, Los Angeles","http://www.ucla.edu/","United States",62,"40","↓"],
+  ["University of Hong Kong","http://www.hku.hk/","Hong Kong",63,"71","↑"],
+  ["Goethe University Frankfurt","http://www.goethe-university-frankfurt.de/","Germany",64,"47","↓"],
+  ["Cornell University","http://www.cornell.edu/","United States",65,"51","↓"],
+  ["Bocconi University","https://www.unibocconi.it/","Italy",66,"72","↑"],
+  ["Boston University","http://www.bu.edu/","United States",67,"6","↓"],
+  ["Tufts University","http://www.tufts.edu/","United States",68,"Not ranked",""],
+  ["University of New South Wales","http://www.unsw.edu.au/","Australia",69,"61","↓"],
+  ["Seoul National University","http://www.snu.ac.kr/","South Korea",70,"103","↑"],
+  ["University of Edinburgh","http://www.ed.ac.uk/","United Kingdom",71,"78","↑"],
+  ["KU Leuven","http://www.khleuven.be/","Belgium",72,"60","↓"],
+  ["Nanyang Technological University, Singapore","http://www.ntu.edu.sg/","Singapore",73,"91","↑"],
+  ["Frankfurt School of Finance & Management","http://www.frankfurt-school.de/","Germany",74,"64","↓"],
+  ["University of Zurich","http://www.uzh.ch/","Switzerland",75,"68","↓"],
+  ["UCL","http://www.ucl.ac.uk/","United Kingdom",76,"49","↓"],
+  ["Korea Advanced Institute of Science and Technology (KAIST)","http://www.kaist.ac.kr/","South Korea",77,"77","→"],
+  ["McMaster University","http://www.mcmaster.ca/","Canada",78,"74","↓"],
+  ["Technical University of Berlin","http://www.tu-berlin.de/","Germany",79,"89","↑"],
+  ["University of Bristol","http://www.bris.ac.uk/","United Kingdom",80,"85","↑"],
+  ["Technion Israel Institute of Technology","http://www.technion.ac.il/","Israel",81,"113","↑"],
+  ["Lund University","http://www.lu.se/","Sweden",82,"76","↓"],
+  ["London School of Economics and Political Science","http://www.lse.ac.uk/","United Kingdom",83,"46","↓"],
+  ["ESSEC Business School","http://www.essec.fr/","France",84,"70","↓"],
+  ["Karlsruhe Institute of Technology","http://www.kit.edu","Germany",85,"80","↓"],
+  ["KTH Royal Institute of Technology","https://www.kth.se","Sweden",86,"88","↑"],
+  ["Erasmus University Rotterdam","https://www.eur.nl/","Netherlands",87,"96","↑"],
+  ["Chinese University of Hong Kong","http://www.cuhk.hk/","Hong Kong",88,"82","↓"],
+  ["Sorbonne University (Faculty of Science and Engineering)","https://www.sorbonne-universite.fr/universite/facultes/faculte-des-sciences-et-ingenierie","France",89,"104","↑"],
+  ["University of São Paulo","http://www.unicid.br/","Brazil",90,"75","↓"],
+  ["University of Lausanne","http://www.unil.ch/","Switzerland",91,"94","↑"],
+  ["Hanyang University","http://www.hanyang.ac.kr/","South Korea",92,"Not ranked",""],
+  ["Georgia Institute of Technology","http://www.gatech.edu/","United States",93,"117","↑"],
+  ["Georgetown University","http://www.georgetown.edu/","United States",94,"95","↑"],
+  ["Leiden University","https://www.universiteitleiden.nl/","Netherlands",95,"105","↑"],
+  ["Utrecht University","https://www.uu.nl/","Netherlands",96,"Not ranked",""],
+  ["EDHEC Business School","http://edu.edhec.com/","France",97,"98","↑"],
+  ["Monterrey Institute of Technology and Higher Education","https://tec.mx/","Mexico",98,"101","↑"],
+  ["Karolinska Institute","http://www.ki.se/","Sweden",99,"111","↑"],
+  ["RWTH Aachen University","http://www.rwth-aachen.de/","Germany",100,"133","↑"],
+  ["National Taiwan University","http://www.ntu.edu.tw/","Taiwan",101,"122","↑"],
+  ["Ghent University","http://www.rug.ac.be/","Belgium",102,"112","↑"],
+  ["University of Göttingen","http://www.uni-goettingen.de","Germany",103,"87","↓"],
+  ["Polytechnic University of Milan","http://www.polimi.it/","Italy",104,"102","↓"],
+  ["University of Mannheim","http://www.uni-mannheim.de/","Germany",105,"Not ranked",""],
+  ["University of Pennsylvania","http://www.upenn.edu/","United States",106,"93","↓"],
+  ["University of Science and Technology of China","http://www.ustc.edu.cn/","China",107,"123","↑"],
+  ["University of Oslo","http://www.uio.no/","Norway",108,"121","↑"],
+  ["University of Texas at Austin","http://www.utexas.edu/","United States",109,"115","↑"],
+  ["Paris-Sud University","http://www.u-psud.fr/","France",110,"129","↑"],
+  ["University of Bern","http://www.unibe.ch/","Switzerland",111,"100","↓"],
+  ["Korea University","http://www.korea.ac.kr","South Korea",112,"139","↑"],
+  ["University of Basel","https://www.unibas.ch/","Switzerland",113,"125","↑"],
+  ["Keio University","http://www.keio.ac.jp/","Japan",114,"127","↑"],
+  ["Northwestern University","https://www.northwestern.edu/","United States",115,"106","↓"],
+  ["Pohang University of Science and Technology","http://www.postech.ac.kr/","South Korea",116,"119","↑"],
+  ["Tel Aviv University","http://www.tau.ac.il/","Israel",117,"135","↑"],
+  ["Texas A&M University","http://www.tamu.edu/","United States",118,"110","↓"],
+  ["Technical University of Denmark","http://www.dtu.dk/","Denmark",119,"73","↓"],
+  ["Trinity College Dublin","https://www.tcd.ie","Ireland",120,"131","↑"],
+  ["Waseda University","http://www.waseda.ac.jp/","Japan",121,"Not ranked",""],
+  ["London Business School","https://www.london.edu/","United Kingdom",122,"Not ranked",""],
+  ["Free University of Berlin","http://www.fu-berlin.de/","Germany",123,"120","↓"],
+  ["National Taiwan University of Science and Technology (Taiwan Tech)","http://www.ntust.edu.tw/","Taiwan",124,"65","↓"],
+  ["Rutgers, the State University of New Jersey","http://www.rutgers.edu/","United States",125,"132","↑"],
+  ["Purdue University","http://www.purdue.edu/","United States",126,"114","↓"],
+  ["Yonsei University (Seoul campus)","http://www.yonsei.ac.kr/","South Korea",127,"Not ranked",""],
+  ["Eindhoven University of Technology","https://www.tue.nl/en/","Netherlands",128,"84","↓"],
+  ["Lomonosov Moscow State University","http://www.msu.ru/","Russia",129,"126","↓"],
+  ["ESADE Business School","http://www.esade.edu","Spain",130,"Not ranked",""],
+  ["Zhejiang University","http://www.zju.edu.cn/","China",131,"108","↓"],
+  ["American University in Dubai","http://www.aud.edu/","UAE",132,"138","↑"],
+  ["University of Auckland","http://www.auckland.ac.nz/","New Zealand",133,"146","↑"],
+  ["University of Alberta","https://www.ualberta.ca/","Canada",134,"124","↓"],
+  ["University of Southern California","http://www.usc.edu/","United States",135,"86","↓"],
+  ["George Washington University","https://www.gwu.edu","United States",136,"Not ranked",""],
+  ["Hong Kong Polytechnic University","http://www.polyu.edu.hk/","Hong Kong",137,"Not ranked",""],
+  ["Aarhus University","http://www.au.dk/","Denmark",138,"Not ranked",""],
+  ["King Abdulaziz University","https://www.kau.edu.sa","Saudi Arabia",139,"140","↑"],
+  ["Aalto University","http://www.aalto.fi/","Finland",140,"Not ranked",""],
+  ["University of Buenos Aires","http://www.uba.ar","Argentina",141,"Not ranked",""],
+  ["University of Geneva","http://www.unige.ch/","Switzerland",142,"130","↓"],
+  ["Harbin Institute of Technology","http://www.hit.edu.cn","China",143,"Not ranked",""],
+  ["Indian Institute of Management","https://www.iima.ac.in","India",144,"Not ranked",""],
+  ["Boston College","http://www.bc.edu/","United States",145,"Not ranked",""],
+  ["University of Freiburg","http://www.uni-freiburg.de","Germany",146,"Not ranked",""],
+  ["Bauman Moscow State Technical University","http://www.bmstu.ru/","Russia",147,"Not ranked",""],
+  ["Vanderbilt University","http://www.vanderbilt.edu/","United States",148,"Not ranked",""],
+  ["University of Malaya","https://www.um.edu.my","Malaysia",149,"147","↓"],
+  ["University of Amsterdam","http://www.uva.nl/","Netherlands",150,"Not ranked",""]
+]
+    $(document).ready(function() {
+        $('#ranking').DataTable({
+            "pageLength": 25,
+            data: dataSet,
+            "order": [[ 3, "asc" ]],
+            dom: 'lfrBtip',
+            columns: [
+            { title: "Institution", render: function ( data, type, row ) {
+                return '<a href="'+ row[1] + '" target="_NEW">' + data + '</a>';
+            } },
+            { title: "URL", visible: false },
+            { title: "Country / Region" },
+            { title: "Ranking 2018" },
+            { title: "Ranking 2017" },
+            { title: "Evolution", render: function ( data, type, row ) {
+                if(row[3]<row[4]) return `<span class="text-success">↑</span>`
+                else if(row[3] == row[4])  return `<span class="text-warning">→</span>`
+                else return `<span class="text-danger">↓</span>`
+            } }
+            ],
+            buttons: [
+                'pdf',
+                'excel',
+                'csv',
+                'copy',
+                'print'
+            ]
+        });
+    });
+    </script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
